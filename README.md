@@ -3,6 +3,8 @@
 ## Courses Work
 
 **The development of a hotel's reservation management application**
+- Java (Eclipse IDE)
+- SQL (PostGreSQL)
 
 ## Course description:
 Modeling as a subtraction mechanism. Entities, relationships between entities, constraints, population constraints, existence constraints, functional dependencies. 
