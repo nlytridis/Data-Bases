@@ -1,7 +1,10 @@
 # Data-Bases
-Courses Work
 
-Course description:
+## Courses Work
+
+**The development of a hotel's reservation management application**
+
+## Course description:
 Modeling as a subtraction mechanism. Entities, relationships between entities, constraints, population constraints, existence constraints, functional dependencies. 
 The Entity-Relationship Description Model. Analysis and recording using the Entity-Relationship Model. The logical models of Databases. The relational model. 
 Convert the Entity-Relationships model to the Relationship Model. 
@@ -16,5 +19,7 @@ Heuristic optimization of questions. Statistical optimization of questions and s
 The problem of simultaneous multi-user access to the database. Problems with missing updates, inconsistent readings, etc. T
 he synchronization control system. Conciliations, mixing of commands from different conciliations, serializability. Synchronization support protocols.
 Support for resuscitation of the Base in case of problems. The recovery mechanism.
-The course is strongly directed towards the design and implementation of applications on Database Systems as well as the optimization of system performance and secondarily on the implementation of Database Systems. 
-A large database application is analyzed, designed and implemented in phases during the course.
+
+
+**The course is strongly directed towards the design and implementation of applications on Database Systems as well as the optimization of system performance and secondarily on the implementation of Database Systems. 
+A large database application is analyzed, designed and implemented in phases during the course.**
