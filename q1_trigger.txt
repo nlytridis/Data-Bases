@@ -1,0 +1,45 @@
+-- Function: "partition_location_q1_Xdays"()
+
+-- DROP FUNCTION "partition_location_q1_Xdays"();
+
+CREATE OR REPLACE FUNCTION "partition_location_q1_Xdays"()
+  RETURNS trigger AS
+$BODY$BEGIN
+
+--------------X DAYS
+
+IF ( NEW.city ='Chania') THEN
+INSERT INTO person1_chania VALUES (NEW.*);
+
+ELSIF ( NEW.city ='Edessa')   THEN
+INSERT INTO person1_Edessa VALUES (NEW.*);
+
+ELSIF ( NEW.city ='Larissa')   THEN
+INSERT INTO person1_Larisa VALUES (NEW.*);
+
+ELSIF ( NEW.city ='Volos')   THEN
+INSERT INTO person1_Volos VALUES (NEW.*);
+
+ELSIF ( NEW.city ='Thessaloniki')   THEN
+INSERT INTO person1_Thessaloniki VALUES (NEW.*);
+
+ELSIF ( NEW.city ='Hrakleio')   THEN
+INSERT INTO person1_Hrakleio VALUES (NEW.*);
+
+ELSIF ( NEW.city ='Rome')   THEN
+INSERT INTO person1_Rome VALUES (NEW.*);
+
+ELSIF ( NEW.city ='Paris')   THEN
+INSERT INTO person1_Paris VALUES (NEW.*);
+
+ELSIF ( NEW.city ='Milan')   THEN
+INSERT INTO person1_Milan VALUES (NEW.*);
+
+ELSIF ( NEW.city ='Napoli')   THEN
+INSERT INTO person1_Napoli VALUES (NEW.*);
+
+
+ELSE
+RAISE EXCEPTION 'city out of range. Fix the trigger partition_location_q1_Xdays function()!'; 
+END IF;
+RETURN NULL;
